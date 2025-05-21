@@ -3,7 +3,7 @@ module.exports = {
   content: ['./src/**/*.{html,js,jsx,ts,tsx}'],
   theme: {
     screens: {
-      sm: '480px',
+      sm: '600px',
       md: '768px',
       lg: '1024px',
     },
@@ -27,6 +27,10 @@ module.exports = {
         DEFAULT: '1rem',
         sm: '1.5rem',
       },
+    },
+    fontFamily: {
+      oswald: ['Oswald', 'sans - serif'],
+      dmsans: ['DM Sans', 'sans - serif'],
     },
   },
   plugins: [],

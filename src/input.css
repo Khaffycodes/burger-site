@@ -1,9 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer {
+@layer base {
   body {
-    @apply text-whiteColor bg-primaryColor tracking-wider;
+    @apply text-whiteColor bg-primaryColor tracking-wider font-dmsans;
+  }
+
+  section {
+    @apply pt-16 pb-4 md:pt-20;
+  }
+}
+
+@layer utilities {
+  .home__title {
+    @apply text-2xl font-oswald font-bold uppercase lg:text-6xl;
+  }
+  .separator {
+    @apply w-28 h-[2px] bg-secondaryColor my-5;
+  }
+  .paragraph {
+    @apply text-paragraphColor text-sm leading-5;
   }
 }
