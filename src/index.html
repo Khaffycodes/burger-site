@@ -557,8 +557,148 @@
     </div>
    </section>
 
+     <!---------------------- Review --------------------->
+     <section id="review" class="bg-primaryColorLight py-20">
+      <div class="container">
+        <div class="max-w-md mx-auto text-center">
+        <h2 class="section__title">CUSTOMER REVIEW</h2>
+        <div class="separator mx-auto"></div>
+        <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Ut, odio nesciunt.   Ipsa voluptatem, quisquam id tempora corporis molestiae</p>
+      </div>
+
+      <div class="swiper py-10 mt-4">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+
+            <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+              <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit
+              . Repellat beatae, mollitia at optio blanditiis quia laboriosam libero?</p>
+
+              <div class="flex items-center">
+                <img src="img/review-1.jpg" alt="review image" class="w-12 h-12 rounded-full">
+
+                <div class="ml-2">
+                  <p class="font-oswald uppercase">John Doe</p>
+                  <p class="paragraph">Designer</p>
+                </div>
+
+                <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto" ></i>
+
+              </div>
+            </div>  
+          </li>
+
+           <li class="swiper-slide">
+
+            <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+              <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit
+              . Repellat beatae, mollitia at optio blanditiis quia laboriosam libero?</p>
+
+              <div class="flex items-center">
+                <img src="img/review-2.jpg" alt="review image" class="w-12 h-12 rounded-full">
+
+                <div class="ml-2">
+                  <p class="font-oswald uppercase">John Doe</p>
+                  <p class="paragraph">Designer</p>
+                </div>
+
+                <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto" ></i>
+
+              </div>
+            </div>  
+          </li>
+
+           <li class="swiper-slide">
+
+            <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+              <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit
+              . Repellat beatae, mollitia at optio blanditiis quia laboriosam libero?</p>
+
+              <div class="flex items-center">
+                <img src="img/review-3.jpg" alt="review image" class="w-12 h-12 rounded-full">
+
+                <div class="ml-2">
+                  <p class="font-oswald uppercase">John Doe</p>
+                  <p class="paragraph">Designer</p>
+                </div>
+
+                <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto" ></i>
+
+              </div>
+            </div>  
+          </li>
+
+           <li class="swiper-slide">
+
+            <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+              <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit
+              . Repellat beatae, mollitia at optio blanditiis quia laboriosam libero?</p>
+
+              <div class="flex items-center">
+                <img src="img/review-4.jpg" alt="review image" class="w-12 h-12 rounded-full">
+
+                <div class="ml-2">
+                  <p class="font-oswald uppercase">John Doe</p>
+                  <p class="paragraph">Designer</p>
+                </div>
+
+                <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto" ></i>
+
+              </div>
+            </div>  
+          </li>
+
+           <li class="swiper-slide">
+
+            <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+              <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit
+              . Repellat beatae, mollitia at optio blanditiis quia laboriosam libero?</p>
+
+              <div class="flex items-center">
+                <img src="img/review-5.jpg" alt="review image" class="w-12 h-12 rounded-full">
+
+                <div class="ml-2">
+                  <p class="font-oswald uppercase">John Doe</p>
+                  <p class="paragraph">Designer</p>
+                </div>
+
+                <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto" ></i>
+
+              </div>
+            </div>  
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
+      </div>
+     </section>
+
    <!---------- Swiper js----------->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+       // Optional parameters
+       direction: 'vertical',
+        loop: true,
+
+      // If we need pagination
+      pagination: {
+      el: '.swiper-pagination',
+       },
+
+      // Navigation arrows
+       navigation: {
+       nextEl: '.swiper-button-next',
+       prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+       },
+      });
+     </script>
 
      <!---------- Main js----------->
     <script src="main.js"></script>

@@ -676,6 +676,10 @@ section{
   margin-right: auto;
 }
 
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -684,8 +688,20 @@ section{
   margin-left: 1rem;
 }
 
-.mb-2{
-  margin-bottom: 0.5rem;
+.mt-4{
+  margin-top: 1rem;
+}
+
+.ml-2{
+  margin-left: 0.5rem;
+}
+
+.ml-auto{
+  margin-left: auto;
+}
+
+.block{
+  display: block;
 }
 
 .flex{
@@ -700,12 +716,20 @@ section{
   display: none;
 }
 
+.h-12{
+  height: 3rem;
+}
+
 .h-14{
   height: 3.5rem;
 }
 
 .h-56{
   height: 14rem;
+}
+
+.w-12{
+  width: 3rem;
 }
 
 .w-28{
@@ -750,12 +774,12 @@ section{
   cursor: pointer;
 }
 
-.grid-cols-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -814,12 +838,16 @@ section{
   overflow: hidden;
 }
 
-.rounded-lg{
-  border-radius: 0.5rem;
-}
-
 .rounded-3xl{
   border-radius: 1.5rem;
+}
+
+.rounded-full{
+  border-radius: 9999px;
+}
+
+.rounded-lg{
+  border-radius: 0.5rem;
 }
 
 .border-b{
@@ -860,6 +888,10 @@ section{
   padding: 1.25rem;
 }
 
+.p-6{
+  padding: 1.5rem;
+}
+
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -868,6 +900,11 @@ section{
 .py-14{
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
+}
+
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .py-3{
@@ -1027,11 +1064,6 @@ section{
   background-color: rgb(255 204 0 / var(--tw-bg-opacity, 1));
 }
 
-.hover\:text-blackColor:hover{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
-}
-
 .hover\:text-secondaryColor:hover{
   --tw-text-opacity: 1;
   color: rgb(255 204 0 / var(--tw-text-opacity, 1));
@@ -1068,16 +1100,16 @@ section{
     height: 400px;
   }
 
+  .md\:w-48{
+    width: 12rem;
+  }
+
   .md\:w-auto{
     width: auto;
   }
 
   .md\:w-full{
     width: 100%;
-  }
-
-  .md\:w-48{
-    width: 12rem;
   }
 
   .md\:flex-1{
