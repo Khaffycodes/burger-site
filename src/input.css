@@ -26,16 +26,24 @@
 
 @layer utilities {
   .home__title,
-  .card__title {
-    @apply text-2xl font-oswald font-bold uppercase lg:text-6xl;
+  .card__title,
+  .section__title {
+    @apply text-4xl font-oswald font-bold uppercase lg:text-6xl;
   }
   .card__title {
     @apply text-xl;
+  }
+  .section__title {
+    @apply text-3xl;
   }
   .separator {
     @apply w-28 h-[2px] bg-secondaryColor my-5;
   }
   .paragraph {
     @apply text-paragraphColor text-sm leading-5;
+  }
+  .tabs_wrap ul li:hover,
+  .tabs_wrap ul li.active {
+    @apply text-blackColor bg-secondaryColor;
   }
 }
