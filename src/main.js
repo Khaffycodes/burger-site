@@ -19,11 +19,41 @@ navLink.forEach((link) => {
 });
 
 /////////Tabs///////////
-const tabs = document.querySelectorAll('.tab_wraps ul li');
+const tabs = document.querySelectorAll('.tabs_wrap ul li');
+const all = document.querySelectorAll('.item_wrap');
+const foods = document.querySelectorAll('.food');
+const beverages = document.querySelectorAll('.beverage');
+const snacks = document.querySelectorAll('.snack');
 
 tabs.forEach((tab) => {
   tab.addEventListener('click', () => {
-    tabs.forEach((tab) => tab.remove.classList('active'));
+    tabs.forEach((tab) => {
+      tab.classList.remove('active');
+    });
+    tab.classList.add('active');
+
+    const tabVal = tab.getAttribute('data-tabs');
+
+    all.forEach((item) => {
+      item.style.display = 'none';
+    });
+
+    if (tabVal == 'food') {
+      foods.forEach((item) => {
+        item.style.display = 'block';
+      });
+    } else if (tabVal == 'snack') {
+      snacks.forEach((item) => {
+        item.style.display = 'block';
+      });
+    } else if (tabVal == 'beverage') {
+      beverages.forEach((item) => {
+        item.style.display = 'block';
+      });
+    } else {
+      all.forEach((item) => {
+        item.style.display = 'block';
+      });
+    }
   });
-  tab.add.classList('active');
 });
