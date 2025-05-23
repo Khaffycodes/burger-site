@@ -1,2 +1,6 @@
-I started building this project on the 20th of May 2025.
-It is a website for burger, i'm using it to practice my tailwindcss
+# project build 20/05/25 - 23/05/25.
+This is a website built to practice tailwindcss. I followed a Youtube tutorial video.
+The tools i used in this project : HTML, TailwindCSS, javaScript.
+
+
+Swiper Api, Scrollreveal
