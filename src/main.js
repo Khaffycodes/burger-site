@@ -88,3 +88,54 @@ window.addEventListener('scroll', scrollHeader);
 /////////DARKMODE///////////
 
 const html = document.querySelector('html');
+const themeBtn = document.getElementById('theme-toggle');
+
+function darkMode() {
+  html.classList.add('dark');
+  themeBtn.classList.replace('ri-moon-line', 'ri-sun-line');
+  localStorage.setItem('mode', 'dark');
+}
+
+function lightMode() {
+  html.classList.remove('dark');
+  themeBtn.classList.replace('ri-sun-line', 'ri-moon-line');
+  localStorage.setItem('mode', 'light');
+}
+
+if (localStorage.getItem('mode') == 'dark') {
+  darkMode();
+} else {
+  lightMode();
+}
+
+themeBtn.addEventListener('click', (e) => {
+  if (localStorage.getItem('mode') == 'light') {
+    darkMode();
+  } else {
+    lightMode();
+  }
+});
+
+/////////SCROLL SECTION ACTIVE LINKS///////////
+const activeLink = () => {
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('.nav__link');
+
+  let current = 'home';
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+
+    if (this.scrollY >= sectionTop - 60) {
+      current = section.getAttribute('id');
+    }
+  });
+
+  navLinks.forEach((item) => {
+    item.classList.remove('text-secondaryColor');
+    if (item.href.includes(current)) {
+      item.classList.add('text-secondaryColor');
+    }
+  });
+};
+window.addEventListener('scroll', activeLink);

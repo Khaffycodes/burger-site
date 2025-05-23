@@ -915,6 +915,10 @@ section{
   border-top-width: 2px;
 }
 
+.border-t{
+  border-top-width: 1px;
+}
+
 .border-primaryColorLight{
   --tw-border-opacity: 1;
   border-color: rgb(1 13 120 / var(--tw-border-opacity, 1));
@@ -1077,6 +1081,11 @@ section{
   color: rgb(255 204 0 / var(--tw-text-opacity, 1));
 }
 
+.text-red-600{
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity, 1));
+}
+
 .shadow-sm{
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
@@ -1186,6 +1195,30 @@ section{
 
 .hover\:opacity-75:hover{
   opacity: 0.75;
+}
+
+.dark\:border-t-0:is(.dark *){
+  border-top-width: 0px;
+}
+
+.dark\:border-whiteColor:is(.dark *){
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+}
+
+.dark\:bg-darkColor:is(.dark *){
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.dark\:bg-darkColorLight:is(.dark *){
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity, 1));
+}
+
+.dark\:hover\:bg-secondaryColor:hover:is(.dark *){
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 204 0 / var(--tw-bg-opacity, 1));
 }
 
 @media (min-width: 768px){
