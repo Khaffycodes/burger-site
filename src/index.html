@@ -29,6 +29,7 @@
     <title>Burger website</title>
   </head>
   <body>
+    <main>
     <!---------------------- Header--------------------->
     <header class="bg-primaryColor fixed top-0 left-0 w-full z-50">
       <nav class="container relative h-14 flex justify-between items-center">
@@ -676,17 +677,36 @@
      </section>
 
       <!---------------------- Contact --------------------->
-      <section id="contact">
-        <div>
-          <div>
-            <h2>GET EXCLUSIVE UPDATES</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <section id="contact" class="bg-secondaryColor py-16">
+        <div class="container flex flex-col gap-5 md:items-center md:flex-row">
+          <div class="space-y-4 md:flex-1">
+            <h2 class="section__title text-blackColor">GET EXCLUSIVE UPDATES</h2>
+            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
-          <div>
-            <input type="email" placeholder="Email address">
-            <a href="">Subscribe</a></div>
+
+          <div class="flex flex-col gap-3 md:flex-row md:flex-1">
+            <input type="email" placeholder="Email address"
+             class="p-2 text-blackColor rounded-lg outline-none md:w-full">
+            <a href="" class="flex items-center justify-center gap-2 btn bg-blackColor hover:opacity-75"><i class="fa-solid fa-paper-plane"></i> Subscribe</a>
+          </div>
         </div>
       </section>
+      </main>
+
+      <!---------------------- Footer --------------------->
+      <footer>
+        <section class="footer">
+          <div class="container">
+            <ul class="grid grid-cols-1 items-start gap-5 pb-5 md:grid-cols-2">
+              <li>
+                <div class="space-y-3">
+                  <a href="#" class="text-4xl font-oswald"></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </footer>
    <!---------- Swiper js----------->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
